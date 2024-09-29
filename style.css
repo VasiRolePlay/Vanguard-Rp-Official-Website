@@ -1,0 +1,193 @@
+/* General Body Styles */
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Consolas', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container {
+    text-align: center;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* SCP Title and Abbreviation */
+.scp-title {
+    font-size: 3.5em;
+    color: #66fcf1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.scp-abbreviation {
+    font-size: 2em;
+    color: #45a29e;
+    margin-bottom: 40px;
+}
+
+/* Description Text */
+.scp-description {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 50px;
+    color: #c5c6c7;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Link Styles */
+.discord-link, .donation-link, .social-link, .community-link, .devlog-link {
+    margin-bottom: 40px;
+}
+
+/* Default Link Styles */
+a {
+    text-decoration: none;
+    color: #66fcf1;
+    font-size: 1.5em;
+    border: 2px solid #66fcf1;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Hover State */
+a:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    border-color: black;
+}
+
+/* Specific Button Adjustments */
+.social-link a {
+    width: 400px; /* Increased width for social button */
+}
+
+.devlog-link a {
+    width: 300px; /* Exact width for devlog button */
+}
+
+/* Donation and Community List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    display: inline-block;
+    font-size: 1.3em;
+    border: 2px solid #c5c6c7;
+    padding: 10px 20px;
+    width: 80%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #66fcf1;
+    border-color: #66fcf1;
+    color: #0b0c10;
+}
+
+/* Navigation Button Style */
+.nav-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #66fcf1; /* Original button color */
+    color: #0b0c10;
+    border: 2px solid #66fcf1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-button:hover {
+    background-color: #ff4d4d; /* Red color on hover */
+    border-color: #ff4d4d;
+    color: #ffffff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.Trailer a {
+    color: #FFD700;
+    border-color: #FFD700;
+    width: 400px;
+}
+.Trailer a:hover {
+    background-color: #ffd900a6;
+    color: black;
+    border-color: black;
+}
+.title_trailer{
+    font-size: 3.5em;
+    color: #FFD700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+video {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+}
+.nav-button-trailer {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #FFD700; /* Original button color */
+    color: #0b0c10;
+    border: 2px solid #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.nav-button-trailer:hover{
+    background-color: #ff4d4d;
+    border-color: black;
+}
+
+.Trailer-SecondButton a {
+    color: #FFD700;
+    border-color: #FFD700;
+}
+
+.Trailer-SecondButton a:hover{
+    width: 400px;
+    margin: 20px;
+    color: black;
+    border-color: black;
+    background-color: #ffd900a6;
+}
+.Video {
+    width: 70px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

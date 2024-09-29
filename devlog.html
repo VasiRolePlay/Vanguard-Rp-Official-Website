@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="V.A.S.I:Rp DevLog - Latest updates from our development team.">
+    <title>V.A.S.I:Rp - DevLog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="favicon-16x16" href="favicon.ico">
+    <style>
+        .devlog-messages {
+            font-size: 1.2em;
+            color: #c5c6c7;
+            background-color: #1f2833;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 800px;
+            margin: 0 auto;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-button">Go Back</a>
+    <div class="container">
+        <h1 class="scp-title">DevLog</h1>
+        <p class="scp-description">Stay updated with the latest development logs from our team.</p>
+        <div class="devlog-messages" id="devlog-messages">Loading...</div>
+    </div>
+
+    <script>
+        async function fetchDevLog() {
+            try {
+                const response = await fetch('https://discord.com/api/webhooks/1284941775378841700/0SaUg_1VCKj1_q_zswbnZBqahrCbGsNwio-aujO2chfDeND5t4Vkj7XC0aWCswBawF15');
+                if (!response.ok) throw new Error('Network response was not ok.');
+                const data = await response.json();
+                const messagesContainer = document.getElementById('devlog-messages');
+                messagesContainer.textContent = data.content || 'No messages available.';
+            } catch (error) {
+                console.error('Failed to fetch DevLog:', error);
+                document.getElementById('devlog-messages').textContent = 'Failed to load DevLog.';
+            }
+        }
+
+        fetchDevLog();
+    </script>
+        <style>
+            body {
+                background-image: url(IMG/Dev_Log.png);
+            }
+        </style>
+</body>
+</html>
+
